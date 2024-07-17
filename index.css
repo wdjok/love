@@ -14,8 +14,10 @@ html
 }
 #paper
 {
-    width: 204.09px;
-    height: 325.04px;
+    /* width: 204.09px;
+    height: 325.04px; */
+    width: 54mm;
+    height: 86mm;
     background-color: white;
     border-radius: 5px;
     display: flex;
@@ -24,12 +26,22 @@ html
 }
 #photo
 {
-    width: 173.86px;
-    height: 234.33px;
-    margin-top: 20px;
+    /* width: 173.86px;
+    height: 234.33px; */
+    width: 46mm;
+    height: 62mm;
+    margin-top: 7mm;
+    background-image: url("/photo.jpg");
+    background-size: 46mm 62mm;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 2px 4px 0px inset;
 }
-#photo img
+/* #photo img
 {
     width: 100%;
     height: 100%;
+} */
+img
+{
+    width: 46mm;
+    height: 62mm;
 }
