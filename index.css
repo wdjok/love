@@ -31,8 +31,8 @@ html
     width: 46mm;
     height: 62mm;
     margin-top: 7mm;
-    background-image: url("/photo.jpg");
-    background-size: 46mm 62mm;
+    background: url("/photo.jpg");
+    background-size:cover;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 2px 4px 0px inset;
 }
 /* #photo img
