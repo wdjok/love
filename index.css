@@ -31,7 +31,7 @@ html
     width: 46mm;
     height: 62mm;
     margin-top: 7mm;
-    background: url("/photo.jpg");
+    background: url("/asset/photo.jpg");
     background-size:cover;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 2px 4px 0px inset;
 }
