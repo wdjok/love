@@ -53,12 +53,19 @@ html
     height: 13mm;
     background-color: #ededed;
     justify-content: space-around;
-    opacity: 0.6;
     font-family: 'Courier New', Courier, monospace;
     line-height: 22px;
     box-shadow: 0px 0px 1px 0px rgba(99, 99, 99, 0.1);
 }
-#day
+#left
 {
-    font-size: 18px;
+    opacity: 0.7;
 }
+#right
+{
+    opacity: 0.5;
+}
+/* #day
+{
+    font-size: 20px;
+} */
