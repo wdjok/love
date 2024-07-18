@@ -11,5 +11,4 @@ function ShowPaper()
 var diffTime=Math.abs(date-today)
 var diffDays=Math.ceil(diffTime / (1000 * 60 * 60 * 24));
 
-// day.innerText=diffDays;
-day.innerText='521';
+day.innerText=diffDays;
