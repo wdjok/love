@@ -57,12 +57,3 @@ html
     font-family: 'Courier New', Courier, monospace;
     box-shadow: 0px 0px 1px 0px rgba(99, 99, 99, 0.1);
 }
-#right
-{
-    height: 22px;
-}
-#day
-{
-    height: 22px;
-    font-size: 20px;
-}
