@@ -71,26 +71,18 @@ html
 }
 #box2
 {
-    width: 48mm;
+    width: 46mm;
     height: 10mm;
     justify-content: center;
     justify-content: space-between;
 }
-#left
-{
-    opacity: 0.7;
-    display: flex;
-}
-#left img
+.icon
 {
     width: 5mm;
-    margin-right: 1mm;
-}
-#right
-{
-    opacity: 0.6;
+    opacity: 0.7;
 }
 #day
 {
     font-family: 'hand';
+    opacity: 0.6;
 }
