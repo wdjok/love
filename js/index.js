@@ -1,7 +1,6 @@
 window.onload = async function()
 {
-    await loadFont('hand', '../fonts/Papernotes.ttf')
-    await loading()
+    await Promise.all([loadFont('hand', '../fonts/Papernotes.ttf'), loading()])
     ShowPaper()
 }
 
@@ -13,7 +12,7 @@ function loadFont(name, url)
         font.load().then((loadedFont) =>
         {
             document.fonts.add(loadedFont)
-            resolve();
+            resolve()
         })
     })
 }
