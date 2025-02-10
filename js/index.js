@@ -1,20 +1,7 @@
 window.onload = async function()
 {
-    await Promise.all([loadFont('hand', '../fonts/Papernotes.ttf'), loading()])
+    await loading()
     ShowPaper()
-}
-
-function loadFont(name, url)
-{
-    return new Promise((resolve) =>
-    {
-        const font = new FontFace(name, `url(${url})`)
-        font.load().then((loadedFont) =>
-        {
-            document.fonts.add(loadedFont)
-            resolve()
-        })
-    })
 }
 
 function loading()
@@ -22,10 +9,11 @@ function loading()
     return new Promise((resolve) =>
     {
         var day = document.getElementById('day')
-        var date = new Date("2023-02-08")
+        var date = new Date(2023, 1, 8) // 月份从 0 开始：1 表示 2 月
         var today = new Date()
-        var diffTime = Math.abs(date - today)
-        day.innerHTML = Math.floor(diffTime / (1000 * 60 * 60 * 24))
+        var diffTime = today - date
+        var days = Math.floor(diffTime / (1000 * 60 * 60 * 24))
+        day.innerHTML = days
         resolve()
     })
 }
