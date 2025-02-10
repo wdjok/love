@@ -1,25 +1,20 @@
-window.onload = async function()
+window.addEventListener('load', function()
 {
-    await loading()
-    ShowPaper()
+    getday();
+    show();
+})
+
+function getday()
+{
+    const day = document.getElementById('day')
+    const date = new Date(2023, 1, 8) // 月份从 0 开始：1 表示 2 月
+    const today = new Date()
+    const diffTime = today - date
+    day.innerHTML = Math.floor(diffTime / (1000 * 60 * 60 * 24))
 }
 
-function loading()
+function show()
 {
-    return new Promise((resolve) =>
-    {
-        var day = document.getElementById('day')
-        var date = new Date(2023, 1, 8) // 月份从 0 开始：1 表示 2 月
-        var today = new Date()
-        var diffTime = today - date
-        var days = Math.floor(diffTime / (1000 * 60 * 60 * 24))
-        day.innerHTML = days
-        resolve()
-    })
-}
-
-function ShowPaper()
-{
-    var wrapper = document.getElementById('wrapper')
+    const wrapper = document.getElementById('wrapper')
     wrapper.style.visibility = "visible"
 }
