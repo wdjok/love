@@ -1,6 +1,6 @@
 window.addEventListener('load', function()
 {
-    getday();
+    // getday();
     show();
 })
 
