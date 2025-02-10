@@ -22,63 +22,54 @@ html
     display: flex;
     align-items: center;
 }
-#paper
+#wrapper
 {
+    visibility: hidden;
     position: relative;
-    z-index: 0;
-    width: 54mm;
-    height: 86mm;
-    background-color: #e7e7e7;
-    border-radius: 1mm;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    box-shadow: 0px 1px 1px 1px rgba(99, 99, 99, 0.2);
-    overflow: hidden;
+    width: 197px;
+    height: 313px;
+    /* width: 54mm;
+    height: 86mm; */
     pointer-events: none;
     -webkit-user-select:none;
     user-select:none;
-    visibility: hidden;
+    box-shadow: 0px 1px 1px 1px rgba(99, 99, 99, 0.2);
 }
-#content
+#frame
 {
-    width: 100%;
-    height: 73mm;
-    display: flex;
-    justify-content: center;
-    box-shadow: 0px 1px 3px 0px rgba(99, 99, 99, 0.2);
-}
-#box
-{
-    width: 46mm;
-    height: 62mm;
-    margin-top: 7mm;
-    box-shadow: inset 0px 1px 1px 0px rgba(0, 0, 0, 0.2);
-}
-#photo
-{
-    position: relative;
-    z-index: -1;
+    position: absolute;
     width: 100%;
     height: 100%;
 }
-#note
+#photo
 {
+    position: absolute;
+    width: 176px;
+    height: 232px;
+    /* width: 46mm;
+    height: 62mm; */
+    padding-top: 27px;
+    padding-left: 12px;
+
+}
+#bottom
+{
+    position: absolute;
+    justify-content: space-around;
+    bottom: 0;
     width: 100%;
-    height: 13mm;
-    background-color: #ededed6e;
-    justify-content: center;
+    height: 11mm;
+    /* background-color: gold; */
 }
-#box2
+#stickers
 {
-    width: 46mm;
-    height: 10mm;
-    justify-content: center;
-    justify-content: space-between;
+    padding-top: 5px;
+    /* background-color: aquamarine; */
 }
-#box2 svg
+#stickers img
 {
-    opacity: 0.7;
+    width: 8mm;
+    height: 8mm;
 }
 #day
 {
