@@ -1,7 +1,7 @@
 window.addEventListener('load', function()
 {
-    getday();
-    show();
+    getday()
+    show()
 })
 
 function getday()
