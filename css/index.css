@@ -10,7 +10,11 @@
 }
 html
 {
-    background-color: #F8D7C6;
+    /* background-color: #F8D7C6; */
+    background-image: url('../asset/b.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     height: 100%;
     width: 100%;
     display: flex;
@@ -33,7 +37,8 @@ html
     pointer-events: none;
     -webkit-user-select:none;
     user-select:none;
-    box-shadow: 0px 1px 1px 1px rgba(99, 99, 99, 0.2);
+    /* box-shadow: 0px 1px 1px 1px rgba(99, 99, 99, 0.2); */
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 #frame
 {
