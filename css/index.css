@@ -11,6 +11,7 @@
 html
 {
     /* background-color: #F8D7C6; */
+    position: fixed;
     background-image: url('../asset/bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
