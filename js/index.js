@@ -11,30 +11,10 @@ function GetDay()
     const today = new Date()
     const diffTime = today - date
     day.innerHTML = Math.floor(diffTime / (1000 * 60 * 60 * 24))
-
-    GetBg()
 }
 
 function Show()
 {
     const wrapper = document.getElementById('wrapper')
     wrapper.style.visibility = "visible"
-}
-function GetBg()
-{
-    const html = document.documentElement;
-    const style = window.getComputedStyle(html);
-    const bg = style.backgroundImage;
-    const match = bg.match(/url\(["']?(.*?)["']?\)/);
-    const img = new window.Image();
-    img.onload = function()
-    {
-        const wrapper = document.getElementById('wrapper');
-        if (wrapper)
-        {
-            wrapper.style.visibility = 'visible';
-        }
-    }
-    img.src = match[1];
-
 }
